@@ -17,7 +17,8 @@ class User_input(BaseModel):
     text: str
 
 
-app = FastAPI()
+# Define the app
+app = FastAPI(title="MyApp", description="Bad Buzz Detection")
 
 # Load distilbert model
 NUM_CLASSES = 2
